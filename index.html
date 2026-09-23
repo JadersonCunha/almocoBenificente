@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Sabores do Providência</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero" id="topo">
+        <!-- INÍCIO DO SLIDER ADICIONADO -->
+        <div class="hero-slider">
+            <img src="massas_topo.png" class="slide active" alt="Massa 1">
+            <img src="massas_topo2.png" class="slide" alt="Massa 2">
+            <img src="massa_topo3.png" class="slide" alt="Massa 3">
+            <div class="slide-overlay"></div>
+        </div>
+        <!-- FIM DO SLIDER -->
+
+        <div class="hero-content">
+            <span class="subtitle">EVENTO BENEFICENTE</span>
+            <h1>Festival de sabores</h1>
+            <h2>do Providência</h2>
+        </div>
+    </header>
+
+    <div class="rotating-banner">
+        <span class="rotating-text-window">
+            <span id="rotating-text">SOBREMESA</span>
+        </span>
+    </div>
+
+    <main class="main-content">
+        <section class="event-details" id="evento">
+            <h3 class="highlight-title">BUFFET DE MASSAS</h3>
+            <p class="date-time">17.10.2026 | 11H30 ÀS 14H30</p>
+            <p class="address">Instituto Providência, Rua Demétrio Ribeiro, 594 - Porto Alegre</p>
+            
+            <div class="menu-info">
+                <div class="price-box">
+                    <h4>Valor do Ingresso</h4>
+                    <span class="price">R$ 40,00</span>
+                </div>
+                <ul class="inclusions">
+                    <li>Massa com 3 opções de molhos (Queijo, Alho e Óleo, Bolonhesa)</li>
+                    <li>1 Sobremesa inclusa</li>
+                    <li><small>*Refrigerante e bebidas são comprados separadamente no local.</small></li>
+                </ul>
+            </div>
+
+            <div class="actions">
+                <a href="LINK_DO_SEU_GOOGLE_FORMS_AQUI" target="_blank" class="btn primary-btn">Comprar Ingresso (Formulário)</a>
+                <button id="btn-rifa" class="btn secondary-btn">Informações da Rifa</button>
+                <button id="btn-palco" class="btn secondary-btn">Palco Aberto</button>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <h3>Contatos e Pagamento</h3>
+            <div class="contact-box">
+                <p><strong>WhatsApp para dúvidas:</strong> </p>
+                <p><strong>Chave PIX:</strong> </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-brand" href="#topo" aria-label="Voltar ao topo">
+                <img src="logo fundo slide.png" alt="Instituto Providência">
+            </a>
+            <div class="footer-copy">
+                <strong>Festival de Sabores do Providência</strong>
+                <span>Um encontro de sabores, solidariedade e comunidade.</span>
+            </div>
+            <nav class="footer-links" aria-label="Links do rodapé">
+                <a href="#evento">O evento</a>
+                <a href="#contato">Contato e pagamento</a>
+                <button id="btn-linha-do-tempo" class="footer-link-button" type="button">Linha do tempo</button>
+                <a href="LINK_DO_SEU_GOOGLE_FORMS_AQUI" target="_blank" rel="noopener noreferrer">Comprar ingresso</a>
+            </nav>
+        </div>
+        <p class="footer-bottom">Instituto Providência · Porto Alegre</p>
+    </footer>
+
+    <div id="modal-rifa" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal-rifa">&times;</span>
+            <h2>Informações da Rifa</h2>
+            <p>Participe da nossa rifa solidária e concorra a prémios incríveis!</p>
+            <p class="highlight-text">Valor: R$ 2,00 por cada número.</p>
+            <p>O sorteio será realizado durante o evento. Pode adquirir os seus números antecipadamente ou no dia.</p>
+        </div>
+    </div>
+
+    <div id="modal-palco" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-modal="modal-palco">&times;</span>
+            <h2>Palco Aberto</h2>
+            <p class="modal-intro">Um espaço para celebrar o talento da nossa comunidade em um ambiente acolhedor, musical e cheio de energia.</p>
+            <div class="modal-tags">
+                <span>Música</span>
+                <span>Arte</span>
+                <span>Talento local</span>
+            </div>
+            <ul class="modal-list">
+                <li><strong>Quem pode participar:</strong> artistas, cantores, músicos, dançarinos, grupos e talentos locais.</li>
+                <li><strong>Como inscrever-se:</strong> envie uma mensagem pelo WhatsApp e confirme sua participação.</li>
+                <li><strong>Prazo final:</strong> 09/10/2026.</li>
+                <li><strong>Tempo de apresentação:</strong> 15 minutos por artista ou grupo.</li>
+                <li><strong>Chegada no dia:</strong> favor chegar com 30 minutos de antecedência.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-linha-do-tempo" class="modal">
+        <div class="modal-content timeline-modal-content">
+            <button class="close-btn" data-modal="modal-linha-do-tempo" type="button" aria-label="Fechar linha do tempo">&times;</button>
+            <p class="timeline-kicker">Instituto Providência</p>
+            <h2>Linha do tempo</h2>
+            <p class="modal-intro">Conheça alguns momentos da nossa história. Selecione um ano para ver as imagens.</p>
+
+            <div class="timeline" role="tablist" aria-label="Anos da linha do tempo">
+                <button class="timeline-year is-selected" type="button" role="tab" aria-selected="true" aria-controls="timeline-gallery" data-year="2016">2016</button>
+                <button class="timeline-year" type="button" role="tab" aria-selected="false" aria-controls="timeline-gallery" data-year="2017">2017</button>
+                <button class="timeline-year" type="button" role="tab" aria-selected="false" aria-controls="timeline-gallery" data-year="2018">2018</button>
+                <button class="timeline-year" type="button" role="tab" aria-selected="false" aria-controls="timeline-gallery" data-year="2019">2019</button>
+            </div>
+
+            <div id="timeline-gallery" class="timeline-gallery" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="commands.js"></script>
+</body>
+</html>
